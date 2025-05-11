@@ -1,34 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B.A.T.S. CLOUD</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    nav a {
-      color: #00ffff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            width: 250px;
+            background-color: #333;
+            position: fixed;
+            height: 100%;
+            color: white;
+            padding-top: 20px;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            min-width: 200px;
+        }
+        .card.red {
+            background-color: #e74c3c;
+        }
+        .card.green {
+            background-color: #2ecc71;
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <img src="img/logo.png" alt="B.A.T.S. CLOUD Logo" width="200">
-  <h1>Welcome to B.A.T.S. CLOUD</h1>
-  <p>Your trusted cloud solution provider for next-gen data storage and services.</p>
+<header>
+    <h2>Admin Panel - Dashboard</h2>
+</header>
+<nav>
+    <h3>Main Navigation</h3>
+    <a href="#">Home</a>
+    <a href="#">Create Seller</a>
+    <a href="#">User Details</a>
+    <a href="#">New VPS</a>
+    <a href="#">Renewal VPS</a>
+    <a href="#">Suspended VPS</a>
+    <a href="#">IP Stock</a>
+    <a href="#">Order History</a>
+    <a href="#">Bonus History</a>
+    <a href="#">Wallet History</a>
+    <a href="#">Logout</a>
+</nav>
+<div class="content">
+    <h3>Super Dashboard</h3>
+    <div class="card green">Total Sellers: 4</div>
+    <div class="card">Total Users: 0</div>
+    <div class="card red">Today Sold VPS: 0</div>
+    <div class="card">Today Expired VPS: 0</div>
+    <div class="card">Today Suspended VPS: 0</div>
+</div>
 </body>
 </html>
